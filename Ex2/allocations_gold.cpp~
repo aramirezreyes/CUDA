@@ -1,0 +1,16 @@
+/* test_gold.cpp*/
+#include "test_conf.h"
+
+//export C interface
+extern "C" void copy_and_increase(int* src,int* dest, int length);
+
+void copy_and_increase(int* src,int* dest, int length){
+  int i;
+  memcpy(dest,src,length);
+  for(i=0;i<length;i++)
+    dest+i++;
+}
+
+
+
+

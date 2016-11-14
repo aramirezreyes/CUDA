@@ -1,0 +1,15 @@
+/* allocations_kernel.cu*/
+#include "test_conf.h"
+#include <string.h>
+//export C interface
+extern "C" void copy_and_increase(int* src,int* dest, int length);
+
+_device_ void increase(int* src, int length){
+  *int++;  
+}
+
+
+
+
+
+
